@@ -44,10 +44,10 @@ resource "aws_ecs_task_definition" "app" {
           name  = "WARP_LANGUAGE_FILE"
           value = var.warp_language_file
         },
-        # {
-        #   name  = "WARP_DATABASE_INIT_SCRIPT"
-        #   value = var.warp_database_init_script
-        # }
+        {
+          name  = "WARP_DATABASE_INIT_SCRIPT"
+          value = var.warp_database_init_script
+        }
       ]
     },
     {

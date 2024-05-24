@@ -46,7 +46,7 @@ variable "warp_language_file" {
 }
 
 variable "warp_database_init_script" {
-  description = "The secret key for warp"
+  description = "The list of SQL scripts for initializing the database"
   type        = string
-  default     = "['sql/schema.sql','sql/sample_data.sql']"
+  default     = "[\"sql/schema.sql\", \"sql/sample_data.sql\"]"
 }
