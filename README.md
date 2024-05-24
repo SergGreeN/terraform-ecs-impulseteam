@@ -12,11 +12,13 @@ This repository contains Terraform scripts and a Makefile to deploy the provided
 
 Export the required variables:
 
-    ```sh
+```sh
     export TF_VAR_db_password="your_password"
+```
 
+```sh
     export TF_VAR_warp_secret_key="your_secret_key"
-    ```
+```
 
 1. Clone the repository:
 
